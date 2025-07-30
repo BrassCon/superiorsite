@@ -18,12 +18,14 @@
         border-bottom: 2px solid #fff;
     }
     header h1 {
-        font-size: 2.5em;
+        font-size: 2.8em;
         margin: 0;
+        letter-spacing: 2px;
     }
     header p {
         font-size: 1.2em;
         color: #ccc;
+        margin-top: 8px;
     }
     .section {
         max-width: 900px;
@@ -37,13 +39,10 @@
         text-transform: uppercase;
         letter-spacing: 1px;
     }
-    .projects .project {
-        background: #111;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 8px;
-        border: 1px solid #333;
+    p {
+        line-height: 1.6;
     }
+    /* Skills */
     .skills-list {
         display: flex;
         flex-wrap: wrap;
@@ -57,6 +56,28 @@
         font-weight: bold;
         font-size: 0.9em;
     }
+    /* Projects */
+    .projects .project {
+        background: #111;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: 1px solid #333;
+    }
+    /* Timeline */
+    .timeline {
+        border-left: 2px solid #fff;
+        padding-left: 20px;
+    }
+    .timeline-item {
+        margin-bottom: 20px;
+    }
+    .timeline-item h4 {
+        margin: 0;
+        font-size: 1.1em;
+        color: #aaa;
+    }
+    /* Contact */
     .contact {
         text-align: center;
         margin-top: 20px;
@@ -73,6 +94,15 @@
         background-color: #fff;
         color: #000;
     }
+    /* Footer */
+    footer {
+        text-align: center;
+        font-size: 0.9em;
+        color: #888;
+        padding: 15px;
+        border-top: 1px solid #333;
+        margin-top: 40px;
+    }
 </style>
 </head>
 <body>
@@ -86,9 +116,12 @@
     <h2>About Me</h2>
     <p>
         I am a DevOps engineer passionate about automating infrastructure, improving deployment pipelines, 
-        and bridging the gap between development and operations. I specialize in containerization, cloud 
-        infrastructure, and CI/CD workflows.
+        and bridging the gap between development and operations. My goal is to deliver reliable, 
+        repeatable, and scalable solutions for modern software delivery.
     </p>
+    <blockquote style="color:#ccc; font-style:italic; border-left:3px solid #fff; padding-left:10px; margin-top:15px;">
+        "Automate everything. Document everything. Share knowledge."
+    </blockquote>
 </section>
 
 <section class="section skills">
@@ -102,6 +135,20 @@
         <div class="skill">AWS</div>
         <div class="skill">Git</div>
         <div class="skill">Linux</div>
+    </div>
+</section>
+
+<section class="section experience">
+    <h2>Experience Timeline</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <h4>2024 – Present</h4>
+            <p>DevOps Engineer at XYZ Corp – Managing CI/CD pipelines, Kubernetes clusters, and AWS infrastructure.</p>
+        </div>
+        <div class="timeline-item">
+            <h4>2022 – 2024</h4>
+            <p>System Administrator – Automated deployments and server management with Ansible & Bash scripts.</p>
+        </div>
     </div>
 </section>
 
@@ -122,6 +169,10 @@
     <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
     <p><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
 </section>
+
+<footer>
+    © 2025 John Doe — Built with ❤️ and DevOps spirit.
+</footer>
 
 </body>
 </html>
