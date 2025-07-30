@@ -1,79 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Profile</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Light gray background */
-            color: #333; /* Dark gray text */
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #fff; /* White background for content */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Soft shadow */
-        }
-        h1, h2 {
-            color: #333;
-            text-align: center;
-        }
-        h2 {
-            border-bottom: 1px solid #ccc; /* Gray border under headings */
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        p {
-            line-height: 1.6;
-        }
-        .projects {
-            margin-top: 20px;
-        }
-        .project {
-            margin-bottom: 10px;
-        }
-        .contact {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .contact a {
-            color: #333;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .contact a:hover {
-            color: #555;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps Portfolio</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        background-color: #000;
+        color: #fff;
+        margin: 0;
+    }
+    header {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #111;
+        border-bottom: 2px solid #fff;
+    }
+    header h1 {
+        font-size: 2.5em;
+        margin: 0;
+    }
+    header p {
+        font-size: 1.2em;
+        color: #ccc;
+    }
+    .section {
+        max-width: 900px;
+        margin: auto;
+        padding: 40px 20px;
+    }
+    h2 {
+        border-bottom: 1px solid #444;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .projects .project {
+        background: #111;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: 1px solid #333;
+    }
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .skill {
+        background: #fff;
+        color: #000;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+    .contact {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .contact a {
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #fff;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    .contact a:hover {
+        background-color: #fff;
+        color: #000;
+    }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>DevOps Profile</h1>
-        <p>Welcome to my DevOps profile site. Here's a brief overview of my projects:</p>
-        
-        <div class="projects">
-            <h2>My Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of Project 2.</p>
-            </div>
-            <!-- Add more projects as needed -->
-        </div>
-        
-        <div class="contact">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me via email at <a href="mailto:your@email.com">your@email.com</a> or connect with me on <a href="https://linkedin.com">LinkedIn</a>.</p>
-        </div>
+
+<header>
+    <h1>John Doe</h1>
+    <p>DevOps Engineer | CI/CD | Cloud Automation</p>
+</header>
+
+<section class="section about">
+    <h2>About Me</h2>
+    <p>
+        I am a DevOps engineer passionate about automating infrastructure, improving deployment pipelines, 
+        and bridging the gap between development and operations. I specialize in containerization, cloud 
+        infrastructure, and CI/CD workflows.
+    </p>
+</section>
+
+<section class="section skills">
+    <h2>Skills & Tools</h2>
+    <div class="skills-list">
+        <div class="skill">Docker</div>
+        <div class="skill">Kubernetes</div>
+        <div class="skill">Jenkins</div>
+        <div class="skill">Ansible</div>
+        <div class="skill">Terraform</div>
+        <div class="skill">AWS</div>
+        <div class="skill">Git</div>
+        <div class="skill">Linux</div>
     </div>
+</section>
+
+<section class="section projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Cloud Infrastructure Automation</h3>
+        <p>Automated AWS infrastructure deployment using Terraform and Ansible, reducing setup time by 80%.</p>
+    </div>
+    <div class="project">
+        <h3>CI/CD Pipeline for Microservices</h3>
+        <p>Built a Jenkins pipeline integrated with Docker and Kubernetes for zero-downtime deployments.</p>
+    </div>
+</section>
+
+<section class="section contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <p><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
+</section>
+
 </body>
 </html>
